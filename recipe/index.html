@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder - Advanced</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍲 Recipe Finder</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search recipes by ingredient or name...">
+            <button class="search-btn" onclick="searchRecipes()">🔍 Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="recipes-grid" class="grid-container"></section>
+        
+        <aside id="favorites-section">
+            <h2>Your Favorite Recipes ❤️</h2>
+            <div id="favorite-recipes" class="grid-container"></div>
+        </aside>
+    </main>
+
+    <div id="recipe-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="recipe-details"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Student SS la1n</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

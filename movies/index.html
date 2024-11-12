@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Movies App</h1>
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search for movies...">
+        </div>
+    </header>
+
+    <div id="popular-movies" class="movie-section">
+        <h2>Popular Movies in 2024</h2>
+        <div id="popular-movie-grid" class="movie-grid"></div>
+    </div>
+
+    <div id="top-rated" class="movie-section">
+        <h2>Top Rated Movies</h2>
+        <div id="top-rated-grid" class="movie-grid"></div>
+    </div>
+
+    <div id="movie-details" class="movie-details">
+        <button id="close-details">Close</button>
+        <div id="movie-info"></div>
+    </div>
+
+    <div id="watchlist-modal" class="watchlist-modal">
+        <h2>Your Watchlist</h2>
+        <ul id="watchlist"></ul>
+        <button id="close-watchlist">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

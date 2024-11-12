@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #ff7f50, #ff6347);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4500;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.search-btn:hover {
+    background-color: #e14000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.recipe-card, .favorite-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.recipe-card:hover, .favorite-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img, .favorite-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3, .favorite-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+button.add-favorite {
+    background-color: #ff7f50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button.add-favorite:hover {
+    background-color: #ff6347;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 50px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: relative;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+.recipe-card, .favorite-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.recipe-card:hover, .favorite-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img, .favorite-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recipe-card h3, .favorite-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.recipe-card button, .favorite-card button {
+    margin-top: 10px;
+}
+
+button.add-favorite {
+    background-color: #ff7f50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button.add-favorite:hover {
+    background-color: #ff6347;
+}
+
+button.add-favorite:focus {
+    outline: none;
+}
+
+button.view-details {
+    background-color: #ff4500;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+button.view-details:hover {
+    background-color: #e14000;
+}
+
+button.view-details:focus {
+    outline: none;
+}
